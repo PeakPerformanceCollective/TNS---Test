@@ -6,9 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Top Notch Studio - Unlock Your Full Potential</title>
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <header class="bg-gray-800 fixed w-full top-0 p-4 flex justify-between items-center z-50">
+  <div class="logo">
+    <a href="#home" class="text-white text-lg">Top Notch Studio</a>
+  </div>
+  <nav class="hidden md:flex space-x-4">
+    <a href="#services" class="text-white">Services</a>
+    <a href="#testimonials" class="text-white">Testimonials</a>
+  </nav>
+  <div class="flex space-x-4 items-center">
+    <a href="#join" class="bg-verdigris text-black px-4 py-2 rounded">Join</a>
+    <a href="https://facebook.com" target="_blank">
+      <img src="facebook-icon.svg" alt="Facebook" class="w-6 h-6">
+    </a>
+    <a href="https://instagram.com" target="_blank">
+      <img src="instagram-icon.svg" alt="Instagram" class="w-6 h-6">
+    </a>
+  </div>
+  <div class="md:hidden">
+    <button id="menu-toggle" class="text-white">☰</button>
+  </div>
+</header>
+
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
+  <section id="services" class="py-12 bg-gray-100">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold text-center">Our Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+      <div class="service-box p-6 bg-white shadow-md rounded-lg">
+        <h3 class="text-xl font-bold">Small Group Training</h3>
+        <p>Join our group sessions to stay motivated and achieve your fitness goals with a supportive community.</p>
+      </div>
+      <div class="service-box p-6 bg-white shadow-md rounded-lg">
+        <h3 class="text-xl font-bold">Personal Training</h3>
+        <p>One-on-one training tailored to your needs to help you reach your full potential.</p>
+      </div>
+      <div class="service-box p-6 bg-white shadow-md rounded-lg">
+        <h3 class="text-xl font-bold">Nutrition Coaching</h3>
+        <p>Get personalized nutrition plans and coaching to complement your fitness regimen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" class="py-12 bg-white">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold text-center">Testimonials & Reviews</h2>
+    <div class="testimonial-box p-6 bg-gray-100 shadow-md rounded-lg">
+      <p>"Top Notch Studio changed my life! The trainers are amazing and the community is so supportive." – Client</p>
+    </div>
+  </div>
+</section>
+
 </html>
