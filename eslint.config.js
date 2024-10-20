@@ -22,6 +22,11 @@ export default tseslint.config(
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+  const nav = document.querySelector('nav');
+  nav.classList.toggle('hidden');
+});
+
       ],
     },
   }
