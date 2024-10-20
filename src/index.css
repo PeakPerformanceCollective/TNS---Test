@@ -1,0 +1,27 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  font-family: 'Russo One', sans-serif;
+}
+
+.bg-oxford-blue { background-color: #0b132bff; }
+.bg-space-cadet { background-color: #1c2541ff; }
+.bg-yinmn-blue { background-color: #3a506bff; }
+.bg-verdigris { background-color: #5bc0beff; }
+.bg-fluorescent-cyan { background-color: #6fffe9ff; }
+
+.text-oxford-blue { color: #0b132bff; }
+.text-space-cadet { color: #1c2541ff; }
+.text-yinmn-blue { color: #3a506bff; }
+.text-verdigris { color: #5bc0beff; }
+.text-fluorescent-cyan { color: #6fffe9ff; }
+
+.btn-primary {
+  @apply bg-fluorescent-cyan text-oxford-blue font-bold py-2 px-4 rounded hover:bg-verdigris transition duration-300;
+}
+
+.section-title {
+  @apply text-3xl font-bold mb-6 text-oxford-blue;
+}
